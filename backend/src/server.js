@@ -33,7 +33,10 @@ app.use(cors({
 
 
 // Routes
+console.log("Registering auth router...");
 app.use("/api/auth",authRouter);
+
+console.log("Registering message router...");
 app.use("/api/messages",messageRouter);
 
 
