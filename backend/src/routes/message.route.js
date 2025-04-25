@@ -4,9 +4,9 @@ import { getMessages, getUsersForSidebar, sendMessage } from "../controllers/mes
 
 const messageRouter = express.Router();
 
-messageRouter.get('/users',authMiddleware, getUsersForSidebar)
-messageRouter.get('/:id',authMiddleware, getMessages)
+messageRouter.get('/users',authMiddleware, getUsersForSidebar);
+messageRouter.get('/messages',authMiddleware, getMessages); // no `:id`
 
-messageRouter.post('/send/:id', authMiddleware, sendMessage)
+messageRouter.post('/send', authMiddleware, sendMessage); // no `:id`
 
 export default messageRouter;
