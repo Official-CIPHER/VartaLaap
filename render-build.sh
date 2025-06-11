@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+cd backend
 
 echo "Cleaning node_modules and lock file..."
 rm -rf node_modules
