@@ -6,6 +6,3 @@ rm -f package-lock.json
 
 echo "Installing fresh dependencies..."
 npm install
-
-echo "Starting the server..."
-npm start
